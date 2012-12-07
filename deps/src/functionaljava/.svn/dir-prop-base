@@ -1,0 +1,15 @@
+K 13
+svn:externals
+V 1
+
+
+K 10
+svn:ignore
+V 33
+build
+classes
+target
+*.iws
+.deps
+
+END

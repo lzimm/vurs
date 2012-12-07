@@ -1,0 +1,121 @@
+<#assign bodyclass="update">
+<#include "/common/header.html">
+
+<style>
+
+</style>
+
+<div class="resultset"><div class="wrapper">
+	<div class="row">
+
+		<#list analysis.top() as definition>
+		<div class="col g3"><div class="result"><form action="/update/add" method="POST">
+
+		<div class="ping_panel">
+			<div class="ping_activity row">
+				<div class="icon">&nbsp;</div>
+				<div class="col g12">
+	            	<h1><input type="checkbox" name="activity" value="${(definition.getKey())!"error"}" /> ${(definition.val("name"))!"error"}</h1>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="ping_interpolations row">
+			    <div class="col g12">
+			        <#list analysis.interpolationList() as interpolation>
+			            <#list interpolation.b() as rel>
+			                <h2><input type="checkbox" name="${rel.b()}" value="${interpolation.a()}" /> ${rel.b()}: ${interpolation.a()} (${rel.a()})</h2>
+			            </#list>
+			        </#list>
+			    </div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="ping_submit" class="row">
+			<div class="buttonwrap"><button><span>Connect!</span></button></div>
+			<input type="hidden" name="phrase" value="${ping}" />
+		</div>
+		
+		<div class="clear"></div>
+
+		</form></div></div>
+		</#list>
+
+		<div class="clear"></div>
+	</div>
+</div></div>
+
+<div style="display: none;">
+	<form id="activitySearch" action="/api/update/activity/search" method="POST" class="two_col">
+	    <label><span>search</span><b><input type="text" class="text" name="search" /></b></label>
+	    <label><button>Find Activity</button></label>
+	</form>
+
+	<div class="clear"></div>
+
+	<form id="interpolationFields" action="#" method="POST" class="three_col">
+	    <label><span>Modifier</span><b><input type="text" class="text" name="modifier" /></b></label>
+	    <label><span>Value</span><b><input type="text" class="text" name="value" /></b></label>
+	    <label><button>Add Modifier</button></label>
+	</form>
+
+	<div class="clear"></div>
+
+	<div id="searchResults" style="display: none;">
+	    <h3>Did you mean<h3>
+	    <div id="searchResultItems"></div>
+	</div>
+
+	<script type="text/javascript">
+	    $("#activitySearch").submit(function() {
+	        $.post($(this).attr("action"), {search: $(this).find("input").val()}, function(res) {
+
+	            var html = "";
+
+	            html += "<h4>Trained</h4>";
+
+	            for (var key in res.trained) {
+	                if (res.trained[key].concept) {
+	                    html += "<p><a href='#' rel='" + key + "'>" + res.trained[key].name + "</a></p>";
+	                }
+	            }
+
+	            html += "<h4>Ranked</h4>";
+
+	            for (var key in res.ranked) {
+	                if (res.ranked[key].concept) {
+	                    html += "<p><a href='#' rel='" + key + "'>" + res.ranked[key].name + "</a></p>";
+	                }
+	            }
+
+	            html += "<h4>Queried</h4>";
+
+	            for (var key in res.queried) {
+	                if (res.queried[key].concept) {
+	                    html += "<p><a href='#' rel='" + key + "'>" + res.queried[key].name + "</a></p>";
+	                }
+	            }
+
+	            $("#searchResultItems").html(html);
+	            $("#searchResults").show();
+
+	        }, "json");
+
+	        return false;
+	    });
+
+	    $("#searchResultItems a").live("click", function(el) {
+	        $("#activity").append("<h1><input type='checkbox' name='activity' value='" + $(this).attr("rel") + "' checked='true' /> " + $(this).html() + "</h1>");
+	        $("#searchResults").hide();
+	        return false;
+	    });
+
+	    $("#interpolationFields").submit(function() {
+	        $("#interpolations").append("<h2><input type='checkbox' name='" + $(this).find("input[name='modifier']").val() + "' value='" + $(this).find("input[name='value']").val() + "' checked='true' /> " + $(this).find("input[name='modifier']").val() + ": " + $(this).find("input[name='value']").val() + "</h2>");
+	        return false;
+	    });
+	</script>
+</div>
+
+<#include "/common/footer.html">

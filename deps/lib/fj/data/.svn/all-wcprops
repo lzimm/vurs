@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/303/trunk/src/main/fj/data
+END
+HashSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/122/trunk/src/main/fj/data/HashSet.java
+END
+Tree.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/196/trunk/src/main/fj/data/Tree.java
+END
+NonEmptyList.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/180/trunk/src/main/fj/data/NonEmptyList.java
+END
+LazyString.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/219/trunk/src/main/fj/data/LazyString.java
+END
+Natural.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/143/trunk/src/main/fj/data/Natural.java
+END
+Option.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/292/trunk/src/main/fj/data/Option.java
+END
+Conversions.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/129/trunk/src/main/fj/data/Conversions.java
+END
+Zipper.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/196/trunk/src/main/fj/data/Zipper.java
+END
+List.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/293/trunk/src/main/fj/data/List.java
+END
+Array.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/303/trunk/src/main/fj/data/Array.java
+END
+IterableW.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/179/trunk/src/main/fj/data/IterableW.java
+END
+Either.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/161/trunk/src/main/fj/data/Either.java
+END
+Enumerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/161/trunk/src/main/fj/data/Enumerator.java
+END
+HashMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/122/trunk/src/main/fj/data/HashMap.java
+END
+Java.java
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/161/trunk/src/main/fj/data/Java.java
+END
+$.java
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/170/trunk/src/main/fj/data/$.java
+END
+Seq.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/285/trunk/src/main/fj/data/Seq.java
+END
+TreeZipper.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/197/trunk/src/main/fj/data/TreeZipper.java
+END
+Validation.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/163/trunk/src/main/fj/data/Validation.java
+END
+Set.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/167/trunk/src/main/fj/data/Set.java
+END
+Stream.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/294/trunk/src/main/fj/data/Stream.java
+END
+TreeMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/180/trunk/src/main/fj/data/TreeMap.java
+END

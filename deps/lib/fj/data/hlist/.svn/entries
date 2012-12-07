@@ -1,0 +1,54 @@
+8
+
+dir
+336
+http://functionaljava.googlecode.com/svn/trunk/src/main/fj/data/hlist
+http://functionaljava.googlecode.com/svn
+
+
+
+2009-04-24T22:24:38.048204Z
+122
+runarorama
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9da73084-c327-11dd-bdf1-993be837f8bb
+
+HList.java
+file
+
+
+
+
+2010-02-17T20:07:43.000000Z
+b3f726e14d3b4bccfd28e9d7b4cb38f9
+2009-04-02T07:08:23.055685Z
+113
+runarorama
+has-props
+
+HPre.java
+file
+
+
+
+
+2010-02-17T20:07:43.000000Z
+6bb367692d3b581186f816e1353b4eb0
+2009-04-24T22:24:38.048204Z
+122
+runarorama
+has-props
+

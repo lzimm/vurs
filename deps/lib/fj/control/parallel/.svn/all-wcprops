@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/195/trunk/src/main/fj/control/parallel
+END
+Strategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/161/trunk/src/main/fj/control/parallel/Strategy.java
+END
+Callables.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/src/main/fj/control/parallel/Callables.java
+END
+Actor.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/173/trunk/src/main/fj/control/parallel/Actor.java
+END
+ParModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/195/trunk/src/main/fj/control/parallel/ParModule.java
+END
+QueueActor.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/173/trunk/src/main/fj/control/parallel/QueueActor.java
+END
+Promise.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/179/trunk/src/main/fj/control/parallel/Promise.java
+END

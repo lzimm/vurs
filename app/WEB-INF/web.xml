@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+    version="2.5" metadata-complete="true"> 
+
+    <display-name>app</display-name>
+
+    <listener>
+        <listener-class>
+            net.vurs.servlet.BayeuxListener
+        </listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>cometd</servlet-name>
+        <servlet-class>org.cometd.server.continuation.ContinuationCometdServlet</servlet-class>
+        <init-param>
+            <param-name>timeout</param-name>
+            <param-value>120000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>interval</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxInterval</param-name>
+            <param-value>10000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>multiFrameInterval</param-name>
+            <param-value>2000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>directDeliver</param-name>
+            <param-value>true</param-value> 
+        </init-param>
+        <init-param>
+            <param-name>refsThreshold</param-name>
+            <param-value>10</param-value>
+        </init-param>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>cometd</servlet-name>
+        <url-pattern>/cometd/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>view</description>
+        <display-name>view</display-name>
+        <servlet-name>view</servlet-name>
+        <servlet-class>net.vurs.servlet.View</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>setup</description>
+        <display-name>setup</display-name>
+        <servlet-name>setup</servlet-name>
+        <servlet-class>net.vurs.servlet.Setup</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+</web-app>

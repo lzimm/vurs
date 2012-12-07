@@ -1,0 +1,68 @@
+-- this is fairly old school work yo --
+
+so, here's the story, as best as i can remember it. i went from working at
+this game company, where i was at the core of a team building the backend
+infastructure for this MMO-type thing, then i quit and started working at
+an ad agency.
+
+turns out, ad agencies don't really do much interesting stuff, so i started
+getting bored and stumbled onto what looked like a particularly shiny object
+at the time: building an "implicit social network" that would work to learn
+about you by taking apart random structured and unstructured "postings"
+(ie: text tweets, checkins on foursquare, nike+ runs, github projects, and
+basically anything else it could use to infer anything about your interests),
+and use those to assemble social networks of people that have common behavior
+(not stated interests), and allow you to form both explicit communities (ie:
+peer groups), as well as just learn from their habits over time (ie: how they 
+might train to graduate to different levels at something faster than you,
+at weight lifting, for instance) -- as if any of that made any sense at all.
+
+but back to the not really doing much interesting thing part: it was pretty
+boring there, and, as usual, whenever i find a new shiny object to stray-cat
+on, i figured, "hey, i don't know much about how to do any of this stuff,
+but why not? i mean, i don't have anything better to do, plus, in secrecy,
+i actually believe something like this could be pretty amazing if done
+right" (that illusion vaporized pretty fast, which is why i moved onto
+shinier objects -- even setting the lack of technical competence aside).
+
+i can't really remember how this all works, but i think, as far as i got it,
+it does a lot of silly stuff, using a bunch of big open source language 
+processing frameworks (lulz) and wikipedia dumps, which were used to tokenize, 
+tag and develop online models that took random status updates like
+"going rockclimbing with @myself this weekend!", plucked apart all the
+interesting stuff to figure out that you were going rockclimbing, with
+@myself (sad, really) on the weekend (ie: what->rockclimbing, who->@myself,
+when->weekend), and in turn develop an interest profile from building up
+aggregations of that stuff over time.
+
+the way it did it, however, was really silly. it basically took the
+plaintext sentence, broke it up into token sequences of, i think, up to
+either 3 or 5 n-grams, with variations of both the actual words themselves,
+as well as n-grams with part-of-speech tags interleaved in instead (as if i
+knew what i was doing), then tried to do a giant lookup into what was
+basically a dumb store of every single n-gram sequence the thing had ever
+seen, and did a big inverse frequency calculation to see what distinct
+(high-entropy) things it could find from what it had learned from other users
+(and remember kids, i'm not a scientist, so i had no idea wtf i was doing,
+just did whatever made sense -- though i did understand some basic bayes!).
+
+but back to the story, basically, tag, figure out anything interesting, and if 
+it saw that your token sequence had been identified previously (as being 
+associated with certain types of activities, which were also learned over time,
+like rockclimbing), it would ask you "hey, this is what i think you did, amirite?", 
+and you could either say "yeah, you can strengthen your score on that match", 
+or "no, but i'll teach you what i meant so you can learn it for the future lulz".
+
+and that actually seemed like it was working enough to make me feel happy enough
+to move onto something else, but that's another story.
+
+and if you know anything about my kinds of stories, they don't get edited very
+well, so this whole thing probably made absolutely no sense at all.
+
+anyways, standard disclaimer:
+
+there's a bunch of extra junk in here you probably don't need to run it,
+while on the other hand, its probably missing some stuff you do
+(as well as any explanation of how all this junk works,
+license information that i probably stripped from a bunch of files
+and any sort of sanity). so funny.

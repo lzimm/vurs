@@ -1,0 +1,50 @@
+
+<script type="text/javascript">
+$("input:text, input:password").each(function() {
+	if ($(this).hasClass("placeholder")) return;
+
+	var original = $(this);
+	
+    $(original).blur(function() { if ($(original).val() == "") {
+		$(original).hide();
+		var placeholder = $("<input type='text' class='placeholder " + $(original).attr("class") +"' style='" + $(original).attr("style") + "' value='" + $(original).attr("placeholder") + "' />");
+		$(placeholder).focus(function() { $(placeholder).remove(); $(original).show().trigger("focus"); }).show().insertBefore(original);
+	}});
+
+    if (!$(this).val()) { $(this).trigger("blur"); }
+});
+
+$("textarea").each(function() {
+	if ($(this).hasClass("placeholder")) return;
+
+	var original = $(this);
+	
+    $(original).blur(function() { if ($(original).val() == "") {
+		$(original).hide();
+		var placeholder = $("<textarea class='placeholder " + $(original).attr("class") +"' style='" + $(original).attr("style") + "' />");
+		$(placeholder).focus(function() { $(placeholder).remove(); $(original).show().trigger("focus"); }).val($(original).attr("placeholder")).show().insertBefore(original);
+	}});
+
+    if (!$(this).val()) { $(this).trigger("blur"); }
+});
+
+$("form").each(function() {
+    var oldSubmit = this.onsubmit;
+    this.onsubmit = function(e) {
+        $(this).find("input.placeholder").remove();
+
+        if (oldSubmit && oldSubmit.call(this, e) === false) {
+            $(this).find("input:text").each(function() {
+                if ($(this).val() == "") {
+                    $(this).trigger("blur");
+                }
+            });
+
+            return false;
+        }
+    };
+});
+</script>
+
+</body>
+</html>

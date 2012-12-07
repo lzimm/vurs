@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/286/trunk/src/main/fj/test
+END
+Arbitrary.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/163/trunk/src/main/fj/test/Arbitrary.java
+END
+Coarbitrary.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/122/trunk/src/main/fj/test/Coarbitrary.java
+END
+Property.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/src/main/fj/test/Property.java
+END
+Variant.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/src/main/fj/test/Variant.java
+END
+Rand.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/src/main/fj/test/Rand.java
+END
+Gen.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/286/trunk/src/main/fj/test/Gen.java
+END
+Arg.java
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/122/trunk/src/main/fj/test/Arg.java
+END
+Bool.java
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/src/main/fj/test/Bool.java
+END
+CheckResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/127/trunk/src/main/fj/test/CheckResult.java
+END
+Shrink.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/163/trunk/src/main/fj/test/Shrink.java
+END
+Result.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/126/trunk/src/main/fj/test/Result.java
+END

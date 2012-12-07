@@ -1,0 +1,13 @@
+<#include "/common/header.html">
+
+<h1>${(ping.getKey())!"error"}</h1>
+
+<#list pingData.val("interpolations") as rel>
+    <h2>${(rel.val("relationship"))!"error"}: ${(rel.val("value"))!"error"}</h2> 
+</#list>
+
+<#list userData.val("pings") as p>
+    <h2>${(p.getKey())!"error"}</h2> 
+</#list>
+
+<#include "/common/footer.html">

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/336/trunk
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/232/trunk/test
+END
+release
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/244/trunk/release
+END
+archive
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/301/trunk/archive
+END
+b
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/230/trunk/b
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/296/trunk/clean
+END
+functionaljava.iml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/293/trunk/functionaljava.iml
+END
+version
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/336/trunk/version
+END
+initrepl
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/299/trunk/initrepl
+END
+compile
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/301/trunk/compile
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/289/trunk/pom.xml
+END
+functionaljava.ipr
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/285/trunk/functionaljava.ipr
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/288/trunk/README
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/287/trunk/build.xml
+END
+tokens.properties
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/269/trunk/tokens.properties
+END
+build-maven.xml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/269/trunk/build-maven.xml
+END
+repl
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/230/trunk/repl
+END
+doc
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/302/trunk/doc
+END
+maven
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/304/trunk/maven
+END
+Build.hs
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/329/trunk/Build.hs
+END
+archive.properties
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/269/trunk/archive.properties
+END

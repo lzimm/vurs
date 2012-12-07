@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!--
+    $LastChangedRevision$
+    $LastChangedDate$
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.functionaljava</groupId>
+  <artifactId>fj</artifactId>
+  <packaging>jar</packaging>
+  <name>Functional Java</name>
+  <description>Functional Java is an open source library that aims to prepare the Java programming language for the inclusion of closures.</description>
+  <version>2.21</version>
+  <url>http://functionaljava.org/</url>
+  <licenses>
+    <license>
+      <name>The BSD License</name>
+      <url>http://functionaljava.googlecode.com/svn/artifacts/latest/LICENCE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://functionaljava.googlecode.com/svn/</url>
+  </scm>
+</project>

@@ -1,0 +1,11 @@
+# $LastChangedRevision$
+# $LastChangedDate$
+# $LastChangedBy$
+
+
+archive.file=functionaljava.jar
+release.file.dir.prefix=functionaljava
+release.file.name.prefix=functionaljava
+repository=https://functionaljava.googlecode.com/svn
+build.username=tonymorris
+scalacheck.version r332

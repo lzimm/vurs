@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Keyspace Name="VURS">
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="ActivityHierarchy"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="PingData"/>
+<ColumnFamily CompareWith="UTF8Type" Name="PingInterpolation"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="PhraseInference"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="PhraseReference"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="ConceptToken"/>
+<ColumnFamily CompareWith="UTF8Type" Name="ActivityPinged"/>
+<ColumnFamily CompareWith="UTF8Type" Name="BadgeEarned"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="PhraseInterpolation"/>
+<ColumnFamily CompareWith="UTF8Type" Name="UserToken"/>
+<ColumnFamily CompareWith="UTF8Type" Name="Location"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="ActivityIndex"/>
+<ColumnFamily CompareWith="UTF8Type" Name="Ping"/>
+<ColumnFamily ColumnType="Super" CompareSubcolumnsWith="TimeUUIDType" CompareWith="UTF8Type" Name="UserData"/>
+</Keyspace>

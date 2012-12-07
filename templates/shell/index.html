@@ -1,0 +1,32 @@
+<#assign bodyclass="home">
+<#include "/common/header.html">
+
+<style>
+body.home #body div.shell_panel #response { background: #fff; color: #3bafbd; font: 14px 'Lucida Grande', Arial, sans-serif; padding: 10px; margin-bottom: 15px; }
+body.home #body div.shell_panel form b { border: 4px solid #fff; display: block; padding: 10px; background: transparent; margin: 0; }
+body.home #body div.shell_panel form b textarea { border: none; background: transparent; color: #fff; width: 100%; }
+body.home #body div.shell_panel form button { display: inline-block; border: none; background: #fff; color: #3bafbd; font: 14px 'Lucida Grande', Arial, sans-serif; padding: 10px; margin-top: 15px; }
+</style>
+
+<div class="row">
+    <div class="col g12 shell_panel">
+        <div id="response">
+        </div>
+        
+        <form action="/api/shell">
+            <b><textarea name="script" rows="20"></textarea></b>
+            <button type="submit">execute</button>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("form").submit(function() {
+        $.post("/api/shell", {script: $("textarea").val()}, function(res) {
+            $("#response").html(res);
+        }, "text");
+        return false;
+    });
+</script>
+
+<#include "/common/footer.html">
