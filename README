@@ -53,8 +53,11 @@ like rockclimbing), it would ask you "hey, this is what i think you did, amirite
 and you could either say "yeah, you can strengthen your score on that match", 
 or "no, but i'll teach you what i meant so you can learn it for the future lulz".
 
-and that actually seemed like it was working enough to make me feel happy enough
-to move onto something else, but that's another story.
+and even though the way it did all that stuff was doing a bunch of really
+"messy" things, like doing giant column counts on what would hapilly become
+huge rows in cassandra (more lulz for better living), that actually seemed like 
+it was working enough to make me feel happy enough to move onto something else, 
+but that's another story.
 
 and if you know anything about my kinds of stories, they don't get edited very
 well, so this whole thing probably made absolutely no sense at all.
